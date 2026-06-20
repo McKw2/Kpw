@@ -1,0 +1,29 @@
+{
+  "name": "kpw-site",
+  "version": "1.0.0",
+  "description": "A modern static website for Kpw.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McKw2/Kpw.git"
+  },
+  "keywords": [
+    "website",
+    "portfolio",
+    "static-site"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/McKw2/Kpw/issues"
+  },
+  "homepage": "https://github.com/McKw2/Kpw#readme",
+  "devDependencies": {
+    "vite": "^8.0.16"
+  }
+}
