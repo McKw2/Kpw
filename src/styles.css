@@ -374,14 +374,14 @@ h2 {
   }
 
   main {
-    padding-top: 166px;
+    padding-top: 144px;
     padding-bottom: 220px;
   }
 
   #work,
   #process,
   #contact {
-    scroll-margin-top: 168px;
+    scroll-margin-top: 146px;
   }
 }
 
@@ -397,6 +397,17 @@ h2 {
   .site-nav a {
     padding: 9px 10px;
     font-size: 0.84rem;
+  }
+
+  .site-header {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 14px;
   }
 
   h1 {
