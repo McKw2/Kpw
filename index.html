@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kpw portfolio website" />
+  <title>Kpw | Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Kpw</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open menu</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Available for freelance work</p>
+          <h1>Building clean, fast, and modern web experiences.</h1>
+          <p class="lead">
+            I design and ship websites that balance strong visuals with performance, accessibility,
+            and maintainable code.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View work</a>
+            <a href="#contact" class="btn btn-secondary">Get in touch</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Quick stats">
+          <h2>Quick Stats</h2>
+          <ul>
+            <li><span>20+</span> projects shipped</li>
+            <li><span>95+</span> Lighthouse scores</li>
+            <li><span>5</span> years creating for the web</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container stack">
+        <p class="eyebrow">About</p>
+        <h2>I help teams move from idea to launch quickly.</h2>
+        <p>
+          My focus is front-end architecture, UX implementation, and reliable delivery. I value
+          thoughtful details and clear communication from kickoff through launch.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container stack">
+        <p class="eyebrow">Projects</p>
+        <h2>Recent builds</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Commerce UX Overhaul</h3>
+            <p>Increased checkout completion with faster flows and cleaner interactions.</p>
+          </article>
+          <article class="card">
+            <h3>SaaS Marketing Site</h3>
+            <p>Launched a modular page system with analytics-driven content improvements.</p>
+          </article>
+          <article class="card">
+            <h3>Design System Foundation</h3>
+            <p>Created reusable components and standards to speed up multi-team delivery.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container stack">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build your next website.</h2>
+        <p>Tell me what you’re building and I’ll reply with a focused plan.</p>
+        <a href="mailto:hello@example.com" class="btn btn-primary">hello@example.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Kpw. All rights reserved.</p>
+      <a href="#home" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
