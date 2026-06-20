@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Kpw — Building thoughtful things on the web</title>
+    <meta
+      name="description"
+      content="Kpw is a personal site for design, engineering, and side projects on the web."
+    />
+    <meta name="theme-color" content="#0b0d12" />
+
+    <meta property="og:title" content="Kpw" />
+    <meta
+      property="og:description"
+      content="A personal site for design, engineering, and side projects on the web."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="Kpw — home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#7c5cff" />
+                  <stop offset="100%" stop-color="#22d3ee" />
+                </linearGradient>
+              </defs>
+              <rect x="2" y="2" width="28" height="28" rx="8" fill="url(#g1)" />
+              <path
+                d="M10 8v16M10 16l8-8M10 16l8 8"
+                stroke="white"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="brand-name">Kpw</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#writing">Writing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            id="theme-toggle"
+            class="icon-btn"
+            type="button"
+            aria-label="Toggle color theme"
+            title="Toggle theme"
+          >
+            <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M12 2v3" />
+                <path d="M12 19v3" />
+                <path d="M2 12h3" />
+                <path d="M19 12h3" />
+                <path d="M4.2 4.2l2.1 2.1" />
+                <path d="M17.7 17.7l2.1 2.1" />
+                <path d="M4.2 19.8l2.1-2.1" />
+                <path d="M17.7 6.3l2.1-2.1" />
+              </g>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path
+                d="M21 12.8A9 9 0 0 1 11.2 3a7 7 0 1 0 9.8 9.8z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="blob blob-a"></div>
+          <div class="blob blob-b"></div>
+          <div class="grid-overlay"></div>
+        </div>
+
+        <div class="container hero-inner">
+          <p class="eyebrow">
+            <span class="dot"></span> Available for new collaborations
+          </p>
+          <h1 class="hero-title">
+            Building thoughtful things
+            <span class="text-gradient">on the web.</span>
+          </h1>
+          <p class="hero-sub">
+            Hi, I'm Kpw — a designer and engineer crafting fast, accessible,
+            and quietly delightful products. This is where I write, ship, and
+            tinker out loud.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#work">See my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+
+          <ul class="hero-stats" aria-label="At a glance">
+            <li>
+              <span class="stat-num">8+</span>
+              <span class="stat-label">years building products</span>
+            </li>
+            <li>
+              <span class="stat-num">30+</span>
+              <span class="stat-label">shipped projects</span>
+            </li>
+            <li>
+              <span class="stat-num">∞</span>
+              <span class="stat-label">cups of coffee</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container two-col">
+          <div>
+            <p class="section-eyebrow">About</p>
+            <h2 class="section-title">A generalist who likes the details.</h2>
+            <p class="lede">
+              I move between design and engineering, and I think the best
+              products live where the two overlap. I care about typography,
+              motion, performance budgets, and the small interactions that make
+              software feel handmade.
+            </p>
+            <p>
+              Lately I've been exploring local-first apps, design systems that
+              are friendly to non-designers, and the quiet power of plain HTML.
+            </p>
+          </div>
+
+          <ul class="chip-list" aria-label="Things I work with">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Node</li>
+            <li>Postgres</li>
+            <li>Tailwind</li>
+            <li>Figma</li>
+            <li>Swift</li>
+            <li>Rust</li>
+            <li>Design systems</li>
+            <li>Accessibility</li>
+            <li>Motion</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="work" class="section section-muted">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-eyebrow">Selected work</p>
+            <h2 class="section-title">Things I've shipped recently.</h2>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card-thumb thumb-a" aria-hidden="true"></div>
+              <div class="card-body">
+                <p class="card-kicker">Product · 2025</p>
+                <h3 class="card-title">Lumen</h3>
+                <p class="card-desc">
+                  A focused writing app for long-form thinking. Local-first,
+                  end-to-end encrypted, and built around a tiny markdown core.
+                </p>
+                <ul class="tag-list">
+                  <li>Design</li>
+                  <li>SwiftUI</li>
+                  <li>Rust</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-thumb thumb-b" aria-hidden="true"></div>
+              <div class="card-body">
+                <p class="card-kicker">Open source · 2024</p>
+                <h3 class="card-title">Halftone UI</h3>
+                <p class="card-desc">
+                  A small, opinionated component library for design-led teams.
+                  Themable, accessible, and a joy to extend.
+                </p>
+                <ul class="tag-list">
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Design system</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-thumb thumb-c" aria-hidden="true"></div>
+              <div class="card-body">
+                <p class="card-kicker">Side project · 2024</p>
+                <h3 class="card-title">Field Notes</h3>
+                <p class="card-desc">
+                  A tiny static site generator for researchers and gardeners of
+                  ideas. Plain markdown in, clean little website out.
+                </p>
+                <ul class="tag-list">
+                  <li>Node</li>
+                  <li>Markdown</li>
+                  <li>Static</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="writing" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-eyebrow">Writing</p>
+            <h2 class="section-title">Notes from the workshop.</h2>
+          </div>
+
+          <ul class="post-list">
+            <li class="post">
+              <a href="#" class="post-link">
+                <span class="post-date">Jun 2026</span>
+                <span class="post-title">Designing with restraint</span>
+                <span class="post-arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li class="post">
+              <a href="#" class="post-link">
+                <span class="post-date">Apr 2026</span>
+                <span class="post-title">A case for plain HTML</span>
+                <span class="post-arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li class="post">
+              <a href="#" class="post-link">
+                <span class="post-date">Feb 2026</span>
+                <span class="post-title">Local-first, quietly</span>
+                <span class="post-arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li class="post">
+              <a href="#" class="post-link">
+                <span class="post-date">Nov 2025</span>
+                <span class="post-title">Color systems that scale</span>
+                <span class="post-arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-muted">
+        <div class="container contact">
+          <div class="contact-card">
+            <p class="section-eyebrow">Contact</p>
+            <h2 class="section-title">Let's build something good.</h2>
+            <p class="lede">
+              I'm always up for a quick chat about design, engineering, or a
+              project you're noodling on. The best way to reach me is email.
+            </p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:hello@example.com">
+                hello@example.com
+              </a>
+              <a class="btn btn-ghost" href="https://github.com/McKw2" rel="noopener">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Kpw. Made with care.</p>
+        <p class="footer-meta">
+          Built with plain HTML, CSS, and a sprinkle of JavaScript.
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/main.js" defer></script>
+  </body>
+</html>
