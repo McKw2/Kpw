@@ -676,12 +676,22 @@ img {
   font-weight: 600;
 }
 
+.form-status.success,
+.form-status.error-text {
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+}
+
 .form-status.success {
-  color: var(--brand-dark);
+  color: #1f5132;
+  background: rgba(49, 92, 68, 0.12);
+  border: 1px solid rgba(49, 92, 68, 0.28);
 }
 
 .form-status.error-text {
-  color: #c0392b;
+  color: #b0271a;
+  background: rgba(192, 57, 43, 0.1);
+  border: 1px solid rgba(192, 57, 43, 0.25);
 }
 
 /* Back to top */
