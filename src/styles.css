@@ -38,6 +38,9 @@ a {
 }
 
 .site-header {
+  position: sticky;
+  top: 16px;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -244,6 +247,12 @@ h2 {
   border-top: 1px solid rgba(248, 239, 228, 0.14);
 }
 
+#work,
+#process,
+#contact {
+  scroll-margin-top: 140px;
+}
+
 .work-grid {
   display: grid;
   gap: 16px;
@@ -349,6 +358,12 @@ h2 {
 
   .contact-section {
     padding: 32px;
+  }
+
+  #work,
+  #process,
+  #contact {
+    scroll-margin-top: 190px;
   }
 }
 
