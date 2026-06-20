@@ -15,7 +15,9 @@ if (navToggle && siteNav) {
   });
 
   siteNav.addEventListener("click", (event) => {
-    if (!(event.target instanceof HTMLAnchorElement)) {
+    const target = event.target instanceof Element ? event.target.closest("a") : null;
+
+    if (!target) {
       return;
     }
 
