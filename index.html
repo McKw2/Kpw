@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kpw | Build Better Digital Products</title>
+    <meta
+      name="description"
+      content="Kpw helps teams design, build, and launch reliable digital products."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="container nav">
+        <a class="logo" href="#top">Kpw</a>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation menu">
+          ☰
+        </button>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="hero container">
+        <p class="eyebrow">Digital Product Studio</p>
+        <h1>Web experiences built for speed, clarity, and conversion.</h1>
+        <p class="hero-copy">
+          We partner with ambitious teams to ship high-performing sites and apps
+          that are easy to maintain and delightful to use.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Start a project</a>
+          <a class="btn btn-secondary" href="#work">See recent work</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section container" id="services">
+        <h2>Services</h2>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Design Systems</h3>
+            <p>
+              Scalable UI libraries and design tokens that keep teams aligned
+              and development moving quickly.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Frontend Engineering</h3>
+            <p>
+              Clean, accessible interfaces built with performance and long-term
+              maintainability in mind.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Launch Optimization</h3>
+            <p>
+              SEO, analytics, and conversion improvements that turn traffic into
+              measurable results.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="work">
+        <div class="container">
+          <h2>Recent work</h2>
+          <div class="grid work-grid">
+            <article class="work-item">
+              <h3>Fintech onboarding refresh</h3>
+              <p>
+                Redesigned onboarding flow, improving activation rate with
+                clearer UX and reduced friction.
+              </p>
+            </article>
+            <article class="work-item">
+              <h3>Ecommerce performance sprint</h3>
+              <p>
+                Rebuilt key landing pages and reduced largest contentful paint
+                by over 40%.
+              </p>
+            </article>
+            <article class="work-item">
+              <h3>B2B platform marketing site</h3>
+              <p>
+                Built a modular, CMS-friendly website that lets the team launch
+                campaigns in hours.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="about">
+        <h2>Why teams choose Kpw</h2>
+        <p class="lead">
+          We combine product thinking with hands-on engineering to turn ideas
+          into production-ready experiences quickly.
+        </p>
+        <ul class="check-list">
+          <li>Fast collaboration with clear communication</li>
+          <li>Accessible and maintainable code by default</li>
+          <li>Focused on business outcomes, not vanity metrics</li>
+        </ul>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container contact-wrap">
+          <div>
+            <h2>Let’s build your next release</h2>
+            <p>
+              Tell us your goals and timeline. We’ll reply with a practical
+              roadmap and recommended next steps.
+            </p>
+          </div>
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="you@company.com" required />
+            </label>
+            <label>
+              Project brief
+              <textarea rows="4" placeholder="What are you building?" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send inquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Kpw. All rights reserved.</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
