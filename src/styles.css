@@ -386,6 +386,11 @@ h2 {
 }
 
 @media (max-width: 560px) {
+  .site-header,
+  .section-shell {
+    width: min(1120px, calc(100% - 48px));
+  }
+
   .site-nav {
     width: auto;
     align-self: center;
