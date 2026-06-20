@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KPW | Personal Site</title>
+    <meta
+      name="description"
+      content="KPW is a personal website for sharing work, process, and contact details."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="KPW home">KPW</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle color theme"
+          data-theme-toggle
+        >
+          <span aria-hidden="true">Theme</span>
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="hero section">
+          <div class="hero-copy">
+            <p class="eyebrow">Personal website</p>
+            <h1>Calm, clear digital experiences with a sharp point of view.</h1>
+            <p class="lede">
+              KPW is a modern home for work, ideas, and collaboration. It is
+              built to introduce the person behind the projects without feeling
+              like a template.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">See selected work</a>
+              <a class="button button-secondary" href="#contact">Start a conversation</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <p class="panel-label">Currently focused on</p>
+            <ul class="hero-list">
+              <li>Designing thoughtful interfaces</li>
+              <li>Shipping fast, lightweight web experiences</li>
+              <li>Balancing personality with usability</li>
+            </ul>
+            <div class="stat-grid" aria-label="Highlights">
+              <div class="stat-card">
+                <span class="stat-value">3</span>
+                <span class="stat-label">Core services</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-value">100%</span>
+                <span class="stat-label">Responsive layout</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-value">0</span>
+                <span class="stat-label">Runtime dependencies</span>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section id="about" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>A personal site with room to grow.</h2>
+          </div>
+          <div class="two-column">
+            <p>
+              This first version of KPW establishes a strong visual foundation:
+              a clean narrative, strong typography, and reusable content blocks
+              that can expand into a fuller portfolio or writing site later.
+            </p>
+            <p>
+              The layout stays intentionally lightweight so it is easy to host,
+              easy to edit, and easy to adapt as new projects, writing, or
+              contact details are added.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="eyebrow">What this site can highlight</p>
+            <h2>Flexible sections for the story you want to tell.</h2>
+          </div>
+          <div class="card-grid">
+            <article class="content-card">
+              <h3>Selected projects</h3>
+              <p>
+                Showcase case studies, experiments, or shipped products with a
+                concise summary and a strong visual rhythm.
+              </p>
+            </article>
+            <article class="content-card">
+              <h3>Writing and ideas</h3>
+              <p>
+                Extend the homepage into essays, notes, or short updates without
+                having to rethink the overall visual system.
+              </p>
+            </article>
+            <article class="content-card">
+              <h3>Clear contact path</h3>
+              <p>
+                Give collaborators or clients an easy next step with prominent
+                calls to action and simple, direct language.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="work" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Selected work</p>
+            <h2>Starter cards ready for real projects.</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <p class="project-tag">Strategy</p>
+              <h3>Brand-forward landing pages</h3>
+              <p>
+                Landing pages that pair a confident narrative with strong
+                conversion cues and a high-end editorial feel.
+              </p>
+            </article>
+            <article class="project-card">
+              <p class="project-tag">Systems</p>
+              <h3>Scalable UI foundations</h3>
+              <p>
+                Flexible components, visual tokens, and layout patterns that
+                keep future pages consistent without feeling rigid.
+              </p>
+            </article>
+            <article class="project-card">
+              <p class="project-tag">Launch</p>
+              <h3>Fast static delivery</h3>
+              <p>
+                A dependency-light approach that loads quickly, is easy to host,
+                and keeps maintenance overhead low.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="process" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Process</p>
+            <h2>Simple structure, thoughtful details.</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-step">01</span>
+              <div>
+                <h3>Frame the message</h3>
+                <p>
+                  Start with the story the site should tell: who it is for, what
+                  it should signal, and what action it should encourage.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-step">02</span>
+              <div>
+                <h3>Shape the experience</h3>
+                <p>
+                  Use typography, spacing, and contrast to make the content feel
+                  considered from the first scroll to the last click.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-step">03</span>
+              <div>
+                <h3>Keep it easy to evolve</h3>
+                <p>
+                  Structure the markup and styles so new pages, project entries,
+                  and content blocks can slot in with minimal rework.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Ready for the real content whenever you are.</h2>
+            <p class="contact-copy">
+              Swap in your actual email, project links, and biography to turn
+              this starter into a complete personal web presence.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:hello@example.com">Email hello@example.com</a>
+            <a class="button button-secondary" href="#top">Back to top</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Built for KPW. Adaptable by design.</p>
+        <p><span data-current-year></span> - Minimal starter site.</p>
+      </footer>
+    </div>
+  </body>
+</html>
