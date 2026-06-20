@@ -7,6 +7,11 @@ if (year) {
 }
 
 if (navToggle && siteNav) {
+  const closeNav = () => {
+    navToggle.setAttribute("aria-expanded", "false");
+    siteNav.classList.remove("is-open");
+  };
+
   navToggle.addEventListener("click", () => {
     const isOpen = navToggle.getAttribute("aria-expanded") === "true";
 
@@ -14,14 +19,7 @@ if (navToggle && siteNav) {
     siteNav.classList.toggle("is-open", !isOpen);
   });
 
-  siteNav.addEventListener("click", (event) => {
-    const target = event.target instanceof Element ? event.target.closest("a") : null;
-
-    if (!target) {
-      return;
-    }
-
-    navToggle.setAttribute("aria-expanded", "false");
-    siteNav.classList.remove("is-open");
+  siteNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeNav);
   });
 }
