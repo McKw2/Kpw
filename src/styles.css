@@ -387,6 +387,8 @@ h2 {
 
 @media (max-width: 560px) {
   .site-nav {
+    width: auto;
+    align-self: center;
     justify-content: center;
     gap: 6px;
     padding: 6px;
