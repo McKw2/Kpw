@@ -19,7 +19,21 @@ if (navToggle && siteNav) {
     siteNav.classList.toggle("is-open", !isOpen);
   });
 
+  siteNav.addEventListener(
+    "click",
+    (event) => {
+      const target = event.target instanceof Element ? event.target : event.target?.parentElement;
+
+      if (target?.closest("a")) {
+        closeNav();
+      }
+    },
+    true
+  );
+
   siteNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", closeNav);
   });
+
+  window.addEventListener("hashchange", closeNav);
 }
