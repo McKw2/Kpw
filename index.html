@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Kpw — Personal Site</title>
+    <meta
+      name="description"
+      content="Personal website of Kpw. Designer, builder, writer."
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f172a'/%3E%3Ctext x='50' y='62' font-family='Inter, sans-serif' font-size='44' font-weight='800' text-anchor='middle' fill='%23f8fafc'%3EK%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="Kpw home">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span class="brand-name">Kpw</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#writing">Writing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle color theme"
+            aria-pressed="false"
+          >
+            <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+            </svg>
+            <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <p class="eyebrow">
+            <span class="pulse" aria-hidden="true"></span>
+            Available for new projects
+          </p>
+          <h1 class="hero-title">
+            Building thoughtful software,
+            <span class="gradient-text">one detail at a time.</span>
+          </h1>
+          <p class="hero-sub">
+            I'm <strong>Kpw</strong> — a designer and engineer crafting clean,
+            fast, and human-centered products on the web.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">See my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch →</a>
+          </div>
+
+          <ul class="hero-stats" aria-label="Highlights">
+            <li>
+              <strong>8+</strong>
+              <span>years shipping</span>
+            </li>
+            <li>
+              <strong>40+</strong>
+              <span>products launched</span>
+            </li>
+            <li>
+              <strong>∞</strong>
+              <span>cups of coffee</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container grid-2">
+          <div>
+            <p class="section-eyebrow">About</p>
+            <h2 id="about-title" class="section-title">
+              A generalist with a soft spot for craft.
+            </h2>
+          </div>
+          <div class="prose">
+            <p>
+              I work across product design, frontend engineering, and the fuzzy
+              space in between. I care about typography, motion that has a
+              reason, and interfaces that disappear once you understand them.
+            </p>
+            <p>
+              Recently I've been exploring tools for thought, design systems
+              that survive growth, and the calm web — sites that feel quick
+              and quiet rather than loud and busy.
+            </p>
+            <ul class="chips" aria-label="Selected skills">
+              <li>Product Design</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Design Systems</li>
+              <li>Prototyping</li>
+              <li>Writing</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section section-alt" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-eyebrow">Selected work</p>
+            <h2 id="projects-title" class="section-title">Recent projects</h2>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card-thumb thumb-1" aria-hidden="true"></div>
+              <div class="card-body">
+                <p class="card-meta">2026 · Product design, Frontend</p>
+                <h3>Atlas — calm analytics</h3>
+                <p>
+                  A dashboard that hides complexity behind clear defaults.
+                  Built with a custom design system and a focus on first-read
+                  comprehension.
+                </p>
+                <a class="card-link" href="#" aria-label="Atlas case study">
+                  Case study →
+                </a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-thumb thumb-2" aria-hidden="true"></div>
+              <div class="card-body">
+                <p class="card-meta">2025 · Brand, Web</p>
+                <h3>Northwind Studio</h3>
+                <p>
+                  A complete identity and marketing site for an independent
+                  research studio, from wordmark to motion principles.
+                </p>
+                <a class="card-link" href="#" aria-label="Northwind case study">
+                  Case study →
+                </a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-thumb thumb-3" aria-hidden="true"></div>
+              <div class="card-body">
+                <p class="card-meta">2025 · Open source</p>
+                <h3>Pico UI</h3>
+                <p>
+                  A tiny, accessible component kit for makers who want to ship
+                  the first version of an idea without yak-shaving.
+                </p>
+                <a class="card-link" href="#" aria-label="Pico UI repository">
+                  View repo →
+                </a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-thumb thumb-4" aria-hidden="true"></div>
+              <div class="card-body">
+                <p class="card-meta">2024 · Experiment</p>
+                <h3>Field Notes</h3>
+                <p>
+                  A writing tool inspired by index cards — atomic notes,
+                  keyboard-first, with a tactile sense of place.
+                </p>
+                <a class="card-link" href="#" aria-label="Field Notes write-up">
+                  Read more →
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Writing -->
+      <section class="section" id="writing" aria-labelledby="writing-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-eyebrow">Writing</p>
+            <h2 id="writing-title" class="section-title">Notes &amp; essays</h2>
+          </div>
+
+          <ul class="posts">
+            <li>
+              <a href="#">
+                <span class="post-date">Apr 2026</span>
+                <span class="post-title">
+                  The calm web, and why I keep coming back to it
+                </span>
+                <span class="post-arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="post-date">Feb 2026</span>
+                <span class="post-title">
+                  Designing defaults: opinions as a feature
+                </span>
+                <span class="post-arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="post-date">Nov 2025</span>
+                <span class="post-title">
+                  A small style guide for personal websites
+                </span>
+                <span class="post-arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="post-date">Aug 2025</span>
+                <span class="post-title">
+                  Type, hierarchy, and learning to stop tweaking
+                </span>
+                <span class="post-arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+        <div class="container contact">
+          <p class="section-eyebrow">Contact</p>
+          <h2 id="contact-title" class="section-title">
+            Let's make something good.
+          </h2>
+          <p class="contact-sub">
+            I take on a small number of projects each year. If you have an idea,
+            a problem, or just want to say hi, send a note.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:hello@example.com">
+              hello@example.com
+            </a>
+            <div class="socials" aria-label="Social links">
+              <a href="#" aria-label="GitHub">GitHub</a>
+              <span aria-hidden="true">·</span>
+              <a href="#" aria-label="Twitter">Twitter</a>
+              <span aria-hidden="true">·</span>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Kpw. Built with care.</p>
+        <a href="#top" class="to-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
