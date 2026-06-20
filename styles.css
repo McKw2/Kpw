@@ -115,6 +115,10 @@ svg {
   color: var(--brand);
 }
 
+.mobile-quote-link {
+  display: none;
+}
+
 .header-cta,
 .button {
   display: inline-flex;
@@ -604,6 +608,17 @@ h3 {
   .site-nav a {
     padding: 0.9rem 0;
     border-top: 1px solid var(--line);
+  }
+
+  .site-nav .mobile-quote-link {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 0.9rem;
+    padding: 0.85rem 1rem;
+    color: #fff;
+    background: var(--brand);
+    border: 0;
+    border-radius: 999px;
   }
 
   .hero {
