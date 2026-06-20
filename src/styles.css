@@ -38,9 +38,11 @@ a {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 50%;
   z-index: 10;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,6 +53,10 @@ a {
   background: rgba(16, 16, 16, 0.88);
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
   backdrop-filter: blur(18px);
+}
+
+main {
+  padding-top: 96px;
 }
 
 .logo {
@@ -256,7 +262,7 @@ h2 {
 #work,
 #process,
 #contact {
-  scroll-margin-top: 118px;
+  scroll-margin-top: 112px;
 }
 
 .work-grid {
@@ -366,10 +372,14 @@ h2 {
     padding: 32px;
   }
 
+  main {
+    padding-top: 166px;
+  }
+
   #work,
   #process,
   #contact {
-    scroll-margin-top: 132px;
+    scroll-margin-top: 168px;
   }
 }
 
