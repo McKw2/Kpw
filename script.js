@@ -6,6 +6,7 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("main section[id]");
 const currentYear = document.getElementById("year");
+const headerOffset = 140;
 
 const applyTheme = (theme) => {
   const isDark = theme === "dark";
@@ -36,19 +37,22 @@ if (menuToggle && nav) {
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
+    const targetId = link.getAttribute("href")?.replace("#", "");
+    if (targetId) {
+      navLinks.forEach((item) => {
+        item.classList.toggle("active", item.getAttribute("href") === `#${targetId}`);
+      });
+    }
     nav?.classList.remove("open");
     menuToggle?.setAttribute("aria-expanded", "false");
   });
 });
 
 const highlightActiveSection = () => {
-  const midpoint = window.scrollY + window.innerHeight * 0.35;
-  let activeId = "home";
+  let activeId = sections[0]?.id || "home";
 
   sections.forEach((section) => {
-    const top = section.offsetTop;
-    const bottom = top + section.offsetHeight;
-    if (midpoint >= top && midpoint < bottom) {
+    if (window.scrollY >= section.offsetTop - headerOffset) {
       activeId = section.id;
     }
   });
