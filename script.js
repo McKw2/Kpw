@@ -44,18 +44,31 @@
     const menuToggle = document.getElementById("menuToggle");
     const mobileNav = document.getElementById("mobileNav");
     if (menuToggle && mobileNav) {
+      const closeMenu = () => {
+        mobileNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open menu");
+      };
+
       menuToggle.addEventListener("click", () => {
         const open = mobileNav.classList.toggle("is-open");
         menuToggle.setAttribute("aria-expanded", String(open));
         menuToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
       });
-      mobileNav.querySelectorAll("a").forEach((a) =>
-        a.addEventListener("click", () => {
-          mobileNav.classList.remove("is-open");
-          menuToggle.setAttribute("aria-expanded", "false");
-          menuToggle.setAttribute("aria-label", "Open menu");
-        })
-      );
+
+      mobileNav
+        .querySelectorAll("a")
+        .forEach((a) => a.addEventListener("click", closeMenu));
+
+      const desktopMQ = window.matchMedia("(min-width: 721px)");
+      const onChange = (e) => {
+        if (e.matches) closeMenu();
+      };
+      if (desktopMQ.addEventListener) {
+        desktopMQ.addEventListener("change", onChange);
+      } else if (desktopMQ.addListener) {
+        desktopMQ.addListener(onChange);
+      }
     }
 
     // Current year
