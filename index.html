@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="kpw build — personal website and portfolio.">
+  <title>kpw build</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__logo" href="#top">kpw <span class="nav__logo-accent">build</span></a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="sr-only">Toggle menu</span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <p class="hero__eyebrow">kpw build</p>
+        <h1 class="hero__title" id="hero-title">
+          Build what matters.<br>
+          <span class="hero__accent">Share the process.</span>
+        </h1>
+        <p class="hero__lead">
+          A home for projects, experiments, and work in progress.
+          Welcome to kpw build.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#work">View work</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <div class="orb orb--one"></div>
+        <div class="orb orb--two"></div>
+        <div class="grid-lines"></div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">About</p>
+          <h2 class="section__title" id="about-title">A little context</h2>
+        </div>
+        <div class="about__grid">
+          <p class="about__text">
+            kpw build is a personal site — part portfolio, part notebook. It’s where
+            finished work lives alongside work in progress, with room to grow as
+            new projects ship.
+          </p>
+          <ul class="about__stats">
+            <li>
+              <span class="about__stat-value">01</span>
+              <span class="about__stat-label">Focus on craft</span>
+            </li>
+            <li>
+              <span class="about__stat-value">02</span>
+              <span class="about__stat-label">Ship in public</span>
+            </li>
+            <li>
+              <span class="about__stat-value">03</span>
+              <span class="about__stat-label">Keep learning</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Work</p>
+          <h2 class="section__title" id="work-title">Selected projects</h2>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card__meta">
+              <span class="card__tag">Coming soon</span>
+            </div>
+            <h3 class="card__title">Project One</h3>
+            <p class="card__desc">
+              A placeholder for your first featured project. Swap in a title,
+              description, and link when you’re ready.
+            </p>
+            <a class="card__link" href="#" aria-disabled="true">View project</a>
+          </article>
+          <article class="card">
+            <div class="card__meta">
+              <span class="card__tag">Coming soon</span>
+            </div>
+            <h3 class="card__title">Project Two</h3>
+            <p class="card__desc">
+              Another slot for experiments, open source, or client work you want
+              to highlight on the homepage.
+            </p>
+            <a class="card__link" href="#" aria-disabled="true">View project</a>
+          </article>
+          <article class="card">
+            <div class="card__meta">
+              <span class="card__tag">This site</span>
+            </div>
+            <h3 class="card__title">kpw build</h3>
+            <p class="card__desc">
+              The site you’re on now — a lightweight, fast homepage for kpw build,
+              made with plain HTML, CSS, and JavaScript.
+            </p>
+            <a class="card__link" href="https://github.com/McKw2/Kpw" target="_blank" rel="noopener noreferrer">View source</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact">
+          <div class="section__header">
+            <p class="section__eyebrow">Contact</p>
+            <h2 class="section__title" id="contact-title">Say hello</h2>
+          </div>
+          <p class="contact__text">
+            Have a question, collaboration idea, or just want to connect?
+            Drop a line — I’d love to hear from you.
+          </p>
+          <a class="btn btn--primary" href="mailto:hello@example.com">hello@example.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">&copy; <span id="year"></span> kpw build</p>
+      <a class="site-footer__top" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
