@@ -1,2 +1,3 @@
-# Kpw
-Website
+# KPW
+
+Personal website built with Next.js, TypeScript, and Tailwind CSS.
