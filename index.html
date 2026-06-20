@@ -8,6 +8,28 @@
       name="description"
       content="KPW Build now brings together landscaping, driveways, fencing, bespoke garden rooms and curated home & garden products from KPW Store in one place."
     />
+    <meta name="theme-color" content="#315c44" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="KPW Build + Store | Landscaping and Home & Garden Shop" />
+    <meta
+      property="og:description"
+      content="Garden builds, driveways, fencing and bespoke garden rooms across Scotland, plus curated home & garden products from KPW Store."
+    />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="KPW Build + Store" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KPW Build + Store" />
+    <meta
+      name="twitter:description"
+      content="Outdoor project work and home styling products in one place."
+    />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23315c44'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='26' font-weight='700' fill='white'%3EKPW%3C/text%3E%3C/svg%3E"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +37,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "KPW Build + Store",
+        "description": "Landscaping, driveways, fencing and bespoke garden rooms across Scotland, plus curated home and garden products.",
+        "areaServed": "Scotland",
+        "email": "info@kpwbuild.co.uk",
+        "telephone": "+441698598298",
+        "url": "https://www.kpwbuild.com/"
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -38,12 +73,12 @@
 
         <nav class="site-nav" id="site-nav" aria-label="Primary">
           <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
           <a href="#store">Shop</a>
           <a href="#process">How it works</a>
-          <a href="#contact">Contact</a>
-          <a class="nav-cta" href="https://kpwstore.co.uk/" target="_blank" rel="noreferrer">
-            Visit store
-          </a>
+          <a href="#faq">FAQ</a>
+          <a href="#quote">Contact</a>
+          <a class="nav-cta" href="#quote">Get a quote</a>
         </nav>
       </div>
     </header>
@@ -60,7 +95,7 @@
               garden products from a single, clearer website.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#contact">Request a free quote</a>
+              <a class="button button-primary" href="#quote">Request a free quote</a>
               <a
                 class="button button-secondary"
                 href="https://kpwstore.co.uk/"
@@ -134,6 +169,70 @@
             <article class="info-card">
               <h3>Planning &amp; design</h3>
               <p>Site analysis, sketches, mood boards and technical layouts to move projects forward with confidence.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Recent work</p>
+            <h2>Projects that show the KPW Build standard.</h2>
+            <p>
+              A snapshot of the outdoor transformations the team delivers, from full garden
+              redesigns to crisp driveways and made-to-measure garden rooms.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-thumb thumb-patio" role="img" aria-label="Sandstone patio and seating area"></div>
+              <div class="project-body">
+                <span class="project-tag">Patio &amp; paving</span>
+                <h3>Sandstone entertaining terrace</h3>
+                <p>A level sandstone patio with built-in steps, designed for outdoor dining and family use.</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb thumb-driveway" role="img" aria-label="Block paved driveway"></div>
+              <div class="project-body">
+                <span class="project-tag">Driveway</span>
+                <h3>Block-paved frontage</h3>
+                <p>A hardwearing, low-maintenance driveway with clean edging that lifts the whole property.</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb thumb-room" role="img" aria-label="Bespoke garden room"></div>
+              <div class="project-body">
+                <span class="project-tag">Garden room</span>
+                <h3>Bespoke garden studio</h3>
+                <p>An insulated, made-to-fit garden room creating year-round workspace and storage.</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb thumb-fence" role="img" aria-label="New timber fencing"></div>
+              <div class="project-body">
+                <span class="project-tag">Fencing</span>
+                <h3>Privacy fencing &amp; gates</h3>
+                <p>Strong timber fencing and matching gates that improve privacy, security and kerb appeal.</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb thumb-lawn" role="img" aria-label="Landscaped lawn and planting"></div>
+              <div class="project-body">
+                <span class="project-tag">Landscaping</span>
+                <h3>Full garden redesign</h3>
+                <p>Reshaped lawn, planting beds and pathways that turn a tired plot into a usable garden.</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb thumb-deck" role="img" aria-label="Composite decking area"></div>
+              <div class="project-body">
+                <span class="project-tag">Decking</span>
+                <h3>Composite deck &amp; lighting</h3>
+                <p>A low-maintenance composite deck with integrated lighting for evenings outdoors.</p>
+              </div>
             </article>
           </div>
         </div>
@@ -264,34 +363,127 @@
         </div>
       </section>
 
-      <section class="section contact-section" id="contact">
+      <section class="section" id="reviews">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Testimonials</p>
+            <h2>What customers say about KPW.</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <figure class="testimonial-card">
+              <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+              <blockquote>
+                The new patio and fencing completely changed how we use the garden. Tidy work,
+                clear pricing and finished on time.
+              </blockquote>
+              <figcaption>Claire M. — Hamilton</figcaption>
+            </figure>
+            <figure class="testimonial-card">
+              <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+              <blockquote>
+                KPW built our garden room and we picked up a few finishing pieces from the store.
+                One team, one easy experience.
+              </blockquote>
+              <figcaption>David R. — Motherwell</figcaption>
+            </figure>
+            <figure class="testimonial-card">
+              <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+              <blockquote>
+                Driveway looks fantastic and has held up brilliantly. Honest advice from start to
+                finish — highly recommend.
+              </blockquote>
+              <figcaption>Susan T. — Bothwell</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Common questions, answered.</h2>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>Which areas do you cover?</summary>
+              <p>KPW Build works across Scotland for landscaping, driveways, fencing and garden rooms. Get in touch to confirm availability for your postcode.</p>
+            </details>
+            <details class="faq-item">
+              <summary>How much does a quote cost?</summary>
+              <p>Quotes are free. Share your project details using the form below and we'll come back to you with next steps and an estimate.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Can I buy products as well as book project work?</summary>
+              <p>Yes. KPW Store sits alongside KPW Build, so you can finish a project with curated home and garden products — with free shipping and 1–3 day delivery.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Do you offer design and planning?</summary>
+              <p>We do. Planning and design covers site analysis, sketches, mood boards and technical layouts so projects move forward with confidence.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="quote">
         <div class="container contact-grid">
           <div>
             <p class="eyebrow">Contact</p>
-            <h2>Talk to KPW about your next project.</h2>
+            <h2>Request a free quote.</h2>
             <p>
-              Reach out for a free quote, ask about service availability or head straight to the
-              shop for ready-to-order products.
+              Tell us about your space and what you have in mind. We'll reply with next steps,
+              availability and an estimate — no obligation.
             </p>
+            <div class="contact-details">
+              <a href="mailto:info@kpwbuild.co.uk">info@kpwbuild.co.uk</a>
+              <a href="tel:01698598298">01698 598298</a>
+              <a href="tel:07535455640">07535 455640</a>
+              <p>Service area: Scotland</p>
+            </div>
           </div>
 
           <div class="contact-card">
-            <a href="mailto:info@kpwbuild.co.uk">info@kpwbuild.co.uk</a>
-            <a href="tel:01698598298">01698 598298</a>
-            <a href="tel:07535455640">07535 455640</a>
-            <p>Service area: Scotland</p>
-            <div class="contact-actions">
-              <a class="button button-primary" href="mailto:info@kpwbuild.co.uk?subject=KPW%20quote%20request">
-                Email for a quote
-              </a>
-              <a class="button button-secondary" href="https://kpwstore.co.uk/" target="_blank" rel="noreferrer">
-                Open KPW Store
-              </a>
-            </div>
+            <form class="quote-form" id="quote-form" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required />
+                <small class="error" data-error-for="name"></small>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+                <small class="error" data-error-for="email"></small>
+              </div>
+              <div class="field">
+                <label for="service">Service</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service…</option>
+                  <option>Fencing</option>
+                  <option>Patios</option>
+                  <option>Driveway &amp; paving</option>
+                  <option>Landscaping</option>
+                  <option>Bespoke garden room</option>
+                  <option>Planning &amp; design</option>
+                  <option>Something else</option>
+                </select>
+                <small class="error" data-error-for="service"></small>
+              </div>
+              <div class="field">
+                <label for="message">Project details</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <small class="error" data-error-for="message"></small>
+              </div>
+              <button class="button button-primary" type="submit">Send quote request</button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
           </div>
         </div>
       </section>
     </main>
+
+    <a class="back-to-top" href="#top" aria-label="Back to top" hidden>↑</a>
 
     <footer class="site-footer">
       <div class="container footer-grid">
