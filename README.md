@@ -1,6 +1,16 @@
-# kpw build
+# KPW Build + Store
 
-Personal website — a lightweight homepage built with plain HTML, CSS, and JavaScript.
+Static landing page that combines the KPW Build landscaping website with the KPW Store ecommerce offering into one clearer destination.
+
+## Sections
+
+- Hero, services, recent projects gallery, store products, how it works, testimonials, FAQ, and a quote request form.
+
+## Files
+
+- `index.html` — combined homepage with SEO/social meta and JSON-LD structured data
+- `css/style.css` — responsive styles for all sections, scroll-reveal, and back-to-top
+- `js/main.js` — mobile nav, footer year, scroll-reveal, active nav highlighting, back-to-top, and client-side quote-form validation
 
 ## Local preview
 
@@ -17,10 +27,3 @@ Then open [http://localhost:8080](http://localhost:8080).
 3. Under **Build and deployment**, set **Source** to **Deploy from a branch**
 4. Choose the `main` branch and `/ (root)` folder
 5. Save — your site will be live at `https://mckw2.github.io/Kpw/`
-
-## Customize
-
-- Update copy in `index.html`
-- Change colors and typography in `css/style.css` (`:root` variables)
-- Replace placeholder projects in the **Work** section
-- Set your email in the **Contact** section
