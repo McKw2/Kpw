@@ -1,9 +1,16 @@
+const header = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".site-nav");
 const year = document.querySelector("#year");
 
 if (year) {
-  year.textContent = new Date().getFullYear();
+  year.textContent = String(new Date().getFullYear());
+}
+
+function closeMenu() {
+  if (!menuToggle || !nav) return;
+  nav.classList.remove("is-open");
+  menuToggle.setAttribute("aria-expanded", "false");
 }
 
 if (menuToggle && nav) {
@@ -13,16 +20,24 @@ if (menuToggle && nav) {
   });
 
   nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("is-open");
-      menuToggle.setAttribute("aria-expanded", "false");
-    });
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+      closeMenu();
+    }
   });
 }
 
-/* Scroll reveal */
+window.addEventListener("scroll", () => {
+  if (header) {
+    header.classList.toggle("is-scrolled", window.scrollY > 12);
+  }
+}, { passive: true });
+
 const revealTargets = document.querySelectorAll(
-  ".section-heading, .service-grid, .project-grid, .product-grid, .timeline, .split-grid, .testimonial-grid, .faq-list, .store-strip, .contact-grid, .hero-copy, .hero-panel"
+  ".section-heading, .about-grid, .service-grid, .project-grid, .product-grid, .timeline, .split-grid, .testimonial-grid, .faq-list, .store-strip, .contact-grid, .hero-copy, .hero-panel"
 );
 
 if ("IntersectionObserver" in window && revealTargets.length) {
@@ -36,12 +51,13 @@ if ("IntersectionObserver" in window && revealTargets.length) {
         }
       });
     },
-    { threshold: 0.12 }
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
   );
   revealTargets.forEach((el) => revealObserver.observe(el));
+} else {
+  revealTargets.forEach((el) => el.classList.add("is-visible"));
 }
 
-/* Active nav highlighting */
 const navLinks = Array.from(document.querySelectorAll(".site-nav a[href^='#']"));
 const sectionIds = navLinks
   .map((link) => link.getAttribute("href"))
@@ -67,7 +83,6 @@ if ("IntersectionObserver" in window && sections.length) {
   sections.forEach((section) => navObserver.observe(section));
 }
 
-/* Back to top */
 const backToTop = document.querySelector(".back-to-top");
 if (backToTop) {
   const toggleBackToTop = () => {
@@ -79,7 +94,6 @@ if (backToTop) {
   window.addEventListener("scroll", toggleBackToTop, { passive: true });
 }
 
-/* Quote form validation */
 const form = document.querySelector("#quote-form");
 const status = document.querySelector("#form-status");
 

@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Inter:wght@400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -52,10 +52,10 @@
     </script>
   </head>
   <body>
-    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-      <div class="container">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
         <a class="brand" href="#top" aria-label="KPW home">
           <span class="brand-mark">KPW</span>
           <span class="brand-copy">
@@ -70,10 +70,13 @@
           aria-expanded="false"
           aria-controls="site-nav"
         >
-          Menu
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="sr-only">Toggle menu</span>
         </button>
 
         <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#projects">Projects</a>
           <a href="#store">Shop</a>
@@ -85,12 +88,17 @@
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__visual" aria-hidden="true">
+          <div class="orb orb--one"></div>
+          <div class="orb orb--two"></div>
+          <div class="grid-lines"></div>
+        </div>
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">Scotland landscaping + KPW Store products</p>
-            <h1>One KPW destination for garden builds, driveways and finishing touches.</h1>
+            <h1 id="hero-title">One KPW destination for garden builds, driveways and finishing touches.</h1>
             <p class="hero-text">
               KPW Build now sits alongside KPW Store so customers can plan an outdoor
               transformation, book trusted installation work and shop stylish home and
@@ -132,6 +140,41 @@
               </p>
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">A single home for outdoor builds and finishing touches.</h2>
+            <p>
+              KPW Build brings more than 20 years of landscaping experience together with
+              KPW Store — one place to plan a garden transformation, book trusted installation
+              work, and shop curated home and garden products.
+            </p>
+          </div>
+          <div class="about-grid">
+            <p class="about-text">
+              From fencing and patios to bespoke garden rooms, the build team shapes outdoor
+              spaces across Scotland. KPW Store then helps customers finish the look with
+              decor, storage and garden styling — free shipping and fast delivery included.
+            </p>
+            <ul class="about-stats">
+              <li>
+                <span class="about-stat-value">20+</span>
+                <span class="about-stat-label">Years of landscaping experience</span>
+              </li>
+              <li>
+                <span class="about-stat-value">Build</span>
+                <span class="about-stat-label">Landscaping, paving, fencing &amp; garden rooms</span>
+              </li>
+              <li>
+                <span class="about-stat-value">Store</span>
+                <span class="about-stat-label">Curated home &amp; garden products with fast delivery</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
